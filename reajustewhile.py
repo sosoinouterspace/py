@@ -1,5 +1,5 @@
-
-for _ in range(3):
+n = 1
+while n <=3:
     salario = float(input('Informe o salário atual do colaborador: R$'))
 
     if salario <= 1500:
@@ -17,3 +17,4 @@ for _ in range(3):
     print(f"O percentual do aumento aplicado: {percentual_aumento}%")
     print(f"O valor do aumento é de: R${aumento}")   
     print(f"Valor do salário após o aumento: R${salario+aumento}")
+    n = n+1

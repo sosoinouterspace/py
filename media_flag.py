@@ -1,7 +1,5 @@
 
-n = int(input("Diigite o número de alunos da turma:"))
-contador = 1
-while contador <=n:
+while True:
     nome = input('Informe seu nome:')
     nota1 = float(input(nome+' informe sua primeira nota:'))
     nota2 = float(input(nome+' informe sua segunda nota:'))
@@ -24,9 +22,8 @@ while contador <=n:
 
     else:
         print(f'O aluno {nome} foi reprovado com média {media:.1f} e percentual de freqûencia de {freq} %') 
-    contador = contador+1
 
-#if media>= 7
-#print(f'O aluno {nome} foi aprovado com média {media}')
-#elif media <=5:
-#print(f'O aluno {nome} foi reprovado com média {media}')
+
+    continuar = input('Deseja continuar? (s/n):')
+    if continuar.lower() != 's':
+        break
